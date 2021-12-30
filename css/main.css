@@ -1,0 +1,57 @@
+/*
+  But :    Mise en forme de l'index.html
+  Auteur : Lionel Ding
+  Date :   09.06.2020 / V1.0
+*/
+
+
+/* Font Custom */
+
+@font-face {
+    font-family: 'MainFont';
+    src: url("../assets/fonts/nasalization-rg.woff") format('woff');
+}
+
+body {
+    font-family: 'MainFont';
+    background-color: #273B68;
+}
+
+.container {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #EE293D;
+}
+
+.container h3 {
+    color: white;
+    margin-bottom: 50px;
+}
+
+#search-bar {
+    margin-bottom: 50px;
+}
+
+
+/* Center reCAPTCHA */
+
+.text-xs-center {
+    text-align: center;
+}
+
+.g-recaptcha {
+    display: inline-block;
+}
+
+
+/* Centered text over image*/
+
+.centered {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.7em;
+}

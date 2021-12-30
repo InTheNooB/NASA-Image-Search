@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- 
+   But :    Vue de l'application, permet d'afficher la page de login, ReCaptcha V2 sécurise l'utilisation
+   Auteur : Lionel Ding
+   Date :   08.06.2020 / V1.0 
+   -->
+
+<hr>
+
+<!-- Login -->
+<form class="user-form  text-center" id="login">
+    <legend>Identification:</legend>
+    <div class="field">
+        <label for="username">Nom d'utilisateur:</label>
+        <input type="text" autocomplete="username" size="30" id="username" placeholder="un nom svp" autofocus />
+    </div>
+    <div class="field">
+        <label for="password">Mot de passe:</label>
+        <input type="password" autocomplete="current-password" size="30" name="" id="password" placeholder="un mot de passe svp" />
+    </div>
+
+
+    <div class="field mt-4 mb-5">
+        <label for="domaine">Domaine</label>
+        <select id="domaine" class="form-control">
+                <option>EDU</option>
+                <option>STUDENTFR</option>
+            </select>
+    </div>
+
+    <!-- ReCaptcha -->
+    <div class="text-xs-center mt-4 mb-4">
+        <div class="g-recaptcha" data-sitekey="6LdXkwEVAAAAANaDNl9lr0yDxF3IY2gMmQwIL0ou" data-callback="captchaLogin"></div>
+    </div>
+
+    <input type="submit" value="Submit" onclick="ctrlLogin.validerUtilisateur()" />
+</form>
+
+<!-- ReCaptcha V2 -->
+<script src="https://www.google.com/recaptcha/api.js"></script>
